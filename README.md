@@ -22,13 +22,13 @@ Images obtained this way can be used for numerous applications, ranging from bas
 
 
 
-□	SPECULAR REFLECTION:- 
+*	SPECULAR REFLECTION:- 
 
 In this scene, there is a river that flows in the east-west direction. As shown in the schematic above, very little energy reflects back to the radar sensor. In this case, the pixel is dark with a low db.
 
 This can also be seen in the south-east portion with the road/airport paved surface. Again, this is a specular reflection off of a smooth surface.
  
-□	DOUBLE-BOUNCE SCATTERING
+*	DOUBLE-BOUNCE SCATTERING
 
 
 On the other hand, the bright white in the centre of image can be interpreted as an urban feature. The radar is receiving double-bounce backscatter, meaning the transmitted pulses are returning back to the sensor.
@@ -36,7 +36,7 @@ On the other hand, the bright white in the centre of image can be interpreted as
 It’s unclear at this scale what this object is but it’s due to double-bounce returns. Because of its values greater than -10dB, pixels will appear as a bright white.
 
 
-□	DIFFUSE SCATTERING
+*	DIFFUSE SCATTERING
 
 
 Finally, the majority of the radar image is rough surface scattering. You have a bit of specular and double-bounce scattering.
@@ -46,9 +46,9 @@ This may be from annual cropland, vegetation or grasses or other features. It is
 
 # Scope of work
 
-□	SAR images have wide application in remote sensing and mapping of surfaces of the Earth and other planets.
+*	SAR images have wide application in remote sensing and mapping of surfaces of the Earth and other planets.
 
-□	Applications of SAR include
+*	Applications of SAR include
 o	Topography
 o	Oceanography
 o	Glaciology
@@ -59,7 +59,7 @@ o	Forestry, including forest height, biomass, deforestation.
 
 # 2.	Various model for SAR image segmentation
 
-□	Here we are explaining three main models for SAR image segmentation
+*	Here we are explaining three main models for SAR image segmentation
 1)	Inception V3(version 3)
 2)	ResNet50
 3)	VGG16
@@ -108,28 +108,28 @@ o	Forestry, including forest height, biomass, deforestation.
  
 2.	Model used for training dataset
 
-□	We have used Inception V3 model For training on our dataset.
+*	We have used Inception V3 model For training on our dataset.
 
 	Briefly Explained Inception V3:-
 
 
-□	Inception Layer is a combination of all those layers (namely, 1×1 Convolutional layer, 3×3 Convolutional layer, 5×5 Convolutional layer) with their output filter banks concatenated into a single output vector forming the input of the next stage.
+*	Inception Layer is a combination of all those layers (namely, 1×1 Convolutional layer, 3×3 Convolutional layer, 5×5 Convolutional layer) with their output filter banks concatenated into a single output vector forming the input of the next stage.
 
-□	Along with the above-mentioned layers, there are two major add-ons in the original inception layer:
+*	Along with the above-mentioned layers, there are two major add-ons in the original inception layer:
 
 1×1 Convolutional layer before applying another layer, which is mainly used for dimensionality reduction
 
 A parallel Max Pooling layer, which provides another option to the inception layer
 
-□	Bigger the model, more prone it is to over fitting. This is particularly noticeable when the training data is small.
+*	Bigger the model, more prone it is to over fitting. This is particularly noticeable when the training data is small.
 
 
 
 # Handling Overfitting
 
-□	Overfitting is a trouble maker for neural networks. Designing too complex neural networks structure could cause overfitting. So, dropout is introduced to overcome the overfitting problem in neural networks.
+*	Overfitting is a trouble maker for neural networks. Designing too complex neural networks structure could cause overfitting. So, dropout is introduced to overcome the overfitting problem in neural networks.
 
-□	The operation includes both dropping units and their connections. Dropped units can be located in both hidden layers or input / output layers. Additionally, training time reduces dramatically.
+*	The operation includes both dropping units and their connections. Dropped units can be located in both hidden layers or input / output layers. Additionally, training time reduces dramatically.
 
 
 
